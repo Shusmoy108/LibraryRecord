@@ -18,4 +18,4 @@ def hours_ahead(request, value):
 
 
 def index(request):
-    return render(request, 'index.html', {})
+    return render(request, 'first.html', {"person_name": "John Do", "company": "Omuk Limited", "item_list": ['chal', 'dal', 'pen', 'pencil'], "ordered_warranty": True})

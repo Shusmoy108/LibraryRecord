@@ -20,6 +20,6 @@ from locallibrary.views import index, current_datetime, hours_ahead
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("time/", current_datetime),
-    path("plus/<int:value>", hours_ahead)
-    ##path('home/', index)
+    path("plus/<int:value>", hours_ahead),
+    path('home/', index)
 ]
