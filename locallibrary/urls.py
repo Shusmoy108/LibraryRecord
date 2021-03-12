@@ -15,11 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from locallibrary.views import index, current_datetime, hours_ahead
+from locallibrary.views import index, current_datetime, hours_ahead, home, dash, templateexample
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("time/", current_datetime),
     path("plus/<int:value>", hours_ahead),
-    path('home/', index)
+    path('home/', index),
+    path('dash/', templateexample),
+    path('library/', dash)
 ]

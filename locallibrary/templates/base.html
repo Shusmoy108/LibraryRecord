@@ -1,0 +1,26 @@
+{% load static %}
+
+<! DOCTYPE html>
+<html ng-app="hotelcom">
+
+<head>
+    <title>{% block title %} {{title}} {% endblock %}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+
+<div class="container" style="padding: 0%;">
+
+    {% block body %}
+    {% endblock %}
+    <div class="footer">
+        Appointment reservation system
+          <br>
+          All rights reserved.
+      </div>
+</div>
+
+<div class="wait-list">
+</div>
+</body>

@@ -17,5 +17,17 @@ def hours_ahead(request, value):
     return HttpResponse(html)
 
 
+def home(request):
+    return render(request, 'inherit.html', {})
+
+
+def templateexample(request):
+    return render(request, 'inherit_template.html', {'title': "Django_MySQL_Boiler_Plate", "body": "inherit template page"})
+
+
+def dash(request):
+    return render(request, 'inherit.html', {"name": "Managefines"})
+
+
 def index(request):
-    return render(request, 'first.html', {"person_name": "John Do", "company": "Omuk Limited", "item_list": ['chal', 'dal', 'pen', 'pencil'], "ordered_warranty": True})
+    return render(request, 'first.html', {"person_name": "Sohel", "company": "Omuk Limited", "item_list": ['chal', 'dal', 'pen', 'pencil'], "ordered_warranty": True})
