@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from locallibrary.views import index, current_datetime, hours_ahead, home, dash, templateexample, students
+from locallibrary.views import index, current_datetime, hours_ahead, home, dash, templateexample, students, book
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -23,6 +23,6 @@ urlpatterns = [
     path("plus/<int:value>", hours_ahead),
     path('home/', index),
     path('dash/', templateexample),
-    path('library/', dash),
+    path('library/', book),
     path('students/', students)
 ]

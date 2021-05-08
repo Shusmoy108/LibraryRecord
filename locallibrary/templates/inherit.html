@@ -2,8 +2,10 @@
 {% block body %}
 <div class="container">
     <h1>{{name}}</h1>
-    <form method="post" class="form-group">
-        {{ formset }}
+    <form action="/library/" method="post" class="form-group">
+        {% csrf_token %}
+        {{ formset.as_p }}
+        <input type="submit" value="Submit">
     </form>
 </div>
 

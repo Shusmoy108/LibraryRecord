@@ -12,3 +12,13 @@ class Student(models.Model):
 
     class Meta:
         db_table = "students"
+
+
+class Book(models.Model):
+    bookName = models.CharField(max_length=100)
+    author = models.CharField(max_length=100)
+    price = models.IntegerField()
+    publicationDate = models.DateField()
+
+    class Meta:
+        db_table = "book"

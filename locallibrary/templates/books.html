@@ -15,21 +15,21 @@
 <table class="table table-striped">
     <thead>
       <tr>
-        <th>Student ID</th>
-		<th>Roll</th>
-		<th>Class</th>
-		<th>First Name</th>
-		<th>Last Name</th>
+        <th>Book ID</th>
+		<th>Book Name</th>
+		<th>Author</th>
+		<th>Publication Date</th>
+		<th>Price</th>
       </tr>
     </thead>
     <tbody>
-	{% for stud in student %}  
+	{% for book in books %}  
       <tr>
-        <td>{{stud.id}}</td>
-        <td>{{stud.roll}}</td>
-		<td>{{stud.sclass}}</td>
-		<td>{{stud.fname}}</td>
-		<td>{{stud.lname}}</td>
+        <td>{{book.id}}</td>
+        <td>{{book.bookName}}</td>
+		<td>{{book.author}}</td>
+		<td>{{book.publicationDate}}</td>
+		<td>{{book.price}}</td>
       </tr>
 	  {% endfor %} 
 	</tbody>
